@@ -11,6 +11,12 @@
 		9A0D114E2C7F93460094F48F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D114D2C7F93460094F48F /* ContentView.swift */; };
 		9A0D11502C7F93480094F48F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0D114F2C7F93480094F48F /* Assets.xcassets */; };
 		9A0D11532C7F93480094F48F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0D11522C7F93480094F48F /* Preview Assets.xcassets */; };
+		9A0D115A2C7F93D10094F48F /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D11592C7F93D10094F48F /* FirstScreen.swift */; };
+		9A0D115C2C7F99A00094F48F /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D115B2C7F99A00094F48F /* SecondScreen.swift */; };
+		9A0D115E2C7F9B1D0094F48F /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D115D2C7F9B1D0094F48F /* ThirdScreen.swift */; };
+		9A0E01242C8153AC00E76C78 /* NavigationPathProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E01232C8153AC00E76C78 /* NavigationPathProtocol.swift */; };
+		9A0E01262C81544200E76C78 /* NavigationPath+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E01252C81544200E76C78 /* NavigationPath+Extension.swift */; };
+		9A0E01282C815B5400E76C78 /* FourthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E01272C815B5400E76C78 /* FourthScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		9A0D114D2C7F93460094F48F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9A0D114F2C7F93480094F48F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A0D11522C7F93480094F48F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9A0D11592C7F93D10094F48F /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
+		9A0D115B2C7F99A00094F48F /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
+		9A0D115D2C7F9B1D0094F48F /* ThirdScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
+		9A0E01232C8153AC00E76C78 /* NavigationPathProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPathProtocol.swift; sourceTree = "<group>"; };
+		9A0E01252C81544200E76C78 /* NavigationPath+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationPath+Extension.swift"; sourceTree = "<group>"; };
+		9A0E01272C815B5400E76C78 /* FourthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +65,14 @@
 			children = (
 				9A0D114B2C7F93460094F48F /* NavigationStackTestApp.swift */,
 				9A0D114D2C7F93460094F48F /* ContentView.swift */,
+				9A0D11592C7F93D10094F48F /* FirstScreen.swift */,
+				9A0D115B2C7F99A00094F48F /* SecondScreen.swift */,
+				9A0D115D2C7F9B1D0094F48F /* ThirdScreen.swift */,
+				9A0E01272C815B5400E76C78 /* FourthScreen.swift */,
 				9A0D114F2C7F93480094F48F /* Assets.xcassets */,
 				9A0D11512C7F93480094F48F /* Preview Content */,
+				9A0E01232C8153AC00E76C78 /* NavigationPathProtocol.swift */,
+				9A0E01252C81544200E76C78 /* NavigationPath+Extension.swift */,
 			);
 			path = NavigationStackTest;
 			sourceTree = "<group>";
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A0E01242C8153AC00E76C78 /* NavigationPathProtocol.swift in Sources */,
 				9A0D114E2C7F93460094F48F /* ContentView.swift in Sources */,
+				9A0D115C2C7F99A00094F48F /* SecondScreen.swift in Sources */,
+				9A0D115E2C7F9B1D0094F48F /* ThirdScreen.swift in Sources */,
 				9A0D114C2C7F93460094F48F /* NavigationStackTestApp.swift in Sources */,
+				9A0E01282C815B5400E76C78 /* FourthScreen.swift in Sources */,
+				9A0E01262C81544200E76C78 /* NavigationPath+Extension.swift in Sources */,
+				9A0D115A2C7F93D10094F48F /* FirstScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var navPath: NavigationPath = .init()
+//    @State private var navPath: [String] = []
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack(path: $navPath) {
+            FirstScreen(navPath: $navPath)
         }
-        .padding()
     }
 }
 
