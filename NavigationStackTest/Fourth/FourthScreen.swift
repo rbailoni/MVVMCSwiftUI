@@ -12,16 +12,21 @@ struct FourthScreen: View {
     
     var body: some View {
         VStack(spacing: 24) {
+            List {
+                ForEach(navPath.stackPaths(), id: \.self) { path in
+                    Text(path)
+                }
+            }
             Button("Go to First Screen") {
-                navPath.backTo(screen: "First")
+                navPath.backTo(screen: "FirstPath")
             }
             
             Button("Go to Second Screen") {
-                navPath.backTo(screen: "Second")
+                navPath.backTo(screen: "SecondPath")
             }
             
             Button("Go to Third Screen") {
-                navPath.backTo(screen: "Third")
+                navPath.backTo(screen: "ThirdPath")
             }
             
             Button("Go to Carambola Screen") {

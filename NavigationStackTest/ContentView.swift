@@ -12,7 +12,7 @@ struct ContentView: View {
 //    @State private var navPath: [String] = []
     var body: some View {
         NavigationStack(path: $navPath) {
-            FirstScreen(navPath: $navPath)
+            AppCoordinator().start()
         }
     }
 }

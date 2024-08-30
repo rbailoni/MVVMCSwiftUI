@@ -7,24 +7,20 @@
 
 import SwiftUI
 
-struct Second: NavigationPathProtocol {
-    var name: String = String(describing: Second.self)
-    var destination: String
-}
-
 struct SecondScreen: View {
     @Binding var navPath: NavigationPath
     var body: some View {
         VStack(spacing: 24) {
-            NavigationLink(value: Second(destination: "Third")) {
+            NavigationLink(value: SecondPath(destination: "Third")) {
                 Text("Go Third Screen")
             }
             
-            NavigationLink(value: Second(destination: "Fourth")) {
+            NavigationLink(value: SecondPath(destination: "Fourth")) {
                 Text("Go Fourth Screen")
             }
         }
-        .navigationDestination(for: Second.self) { pathValue in
+        .navigationDestination(for: SecondPath.self) { pathValue in
+            
             if pathValue.destination == "Third" {
                 ThirdScreen(navPath: $navPath)
             }

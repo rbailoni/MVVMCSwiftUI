@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension NavigationPath {
-    private func stackPaths() -> [String] {
+    func stackPaths() -> [String] {
         do {
             let regex = try NSRegularExpression(pattern:"(?<=\\\\\"name\\\\\":\\\\\")(.*?)(?=\\\\\")")
             let text = String(decoding: try JSONEncoder().encode(self.codable), as: UTF8.self)
