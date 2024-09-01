@@ -22,11 +22,35 @@ extension NavigationPath {
         }
     }
     
-    mutating func backTo(screen: String) {
-        guard let index = stackPaths().lastIndex(of: screen) else {
-            self.removeLast()
+    mutating func backTo(screen: String, onFailure: OnFailureDestination = .previous) {
+        guard let index = stackPaths().firstIndex(of: screen) else {
+            switch onFailure {
+            case .previous:
+                self.removeLast()
+            case .root:
+                self.removeLast(self.count)
+            }
             return
         }
         self.removeLast(index + 1)
     }
+    
+    mutating func backToFirst(screen: String, onFailure: OnFailureDestination = .previous) {
+        guard let index = stackPaths().lastIndex(of: screen) else {
+            switch onFailure {
+            case .root:
+                self.removeLast()
+            case .previous:
+                self.removeLast(self.count)
+            }
+            return
+        }
+        self.removeLast(index + 1)
+    }
+    
+}
+
+enum OnFailureDestination {
+    case root
+    case previous
 }

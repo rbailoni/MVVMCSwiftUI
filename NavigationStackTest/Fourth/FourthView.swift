@@ -7,30 +7,30 @@
 
 import SwiftUI
 
-struct FourthScreen: View {
-    @Binding var navPath: NavigationPath
+struct FourthView: View {
+    @ObservedObject var viewModel: FourthViewModel
     
     var body: some View {
         VStack(spacing: 24) {
             List {
-                ForEach(navPath.stackPaths(), id: \.self) { path in
+                ForEach(viewModel.coordinator.navigationPath.wrappedValue.stackPaths(), id: \.self) { path in
                     Text(path)
                 }
             }
             Button("Go to First Screen") {
-                navPath.backTo(screen: "FirstPath")
+                viewModel.goBackTo(screen: "FirstPath")
             }
             
             Button("Go to Second Screen") {
-                navPath.backTo(screen: "SecondPath")
+                viewModel.goBackTo(screen: "SecondPath")
             }
             
             Button("Go to Third Screen") {
-                navPath.backTo(screen: "ThirdPath")
+                viewModel.goBackTo(screen: "ThirdPath")
             }
             
             Button("Go to Carambola Screen") {
-                navPath.backTo(screen: "Carambola")
+                viewModel.goBackTo(screen: "Carambola")
             }
         }
         .navigationTitle("Fourth Screen")

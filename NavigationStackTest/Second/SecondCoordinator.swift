@@ -16,14 +16,19 @@ final class SecondCoordinator: Coordinator {
     
     @ViewBuilder
     func start() -> some View {
-        SecondScreen(navPath: navigationPath)
+        let viewModel = SecondViewModel(coordinator: self)
+        SecondView(viewModel: viewModel)
     }
     
     @ViewBuilder
     func nextScreen(path: SecondPath) -> some View {
-        switch path.destination {
-        case "Third":
+        switch path {
+        case .first:
+            FirstCoordinator(navigationPath: navigationPath).start()
+        case .third:
             ThirdCoordinator(navigationPath: navigationPath).start()
+        case .fourth:
+            FourthCoordinator(navigationPath: navigationPath).start()
         default:
             EmptyView()
         }

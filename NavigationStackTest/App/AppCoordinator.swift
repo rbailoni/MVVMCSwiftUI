@@ -10,6 +10,6 @@ import SwiftUI
 struct AppCoordinator {
     @ViewBuilder
     func start() -> some View {
-        FirstCoordinator().start()
+        AppViewController()
     }
 }
