@@ -23,21 +23,19 @@ final class SecondCoordinator: SecondCoordinatorProtocol {
         self.navigationPath = navigationPath
     }
     
-    @ViewBuilder
     func start() -> some View {
-        let viewModel = SecondViewModel(coordinator: self)
-        SecondView(viewModel: viewModel)
+        SecondDI(navigationPath: navigationPath).makeSecondView()
     }
     
     func showFirstView() -> some View {
-        FirstCoordinator(navigationPath: navigationPath).start()
+        FirstDI(navigationPath: navigationPath).makeFirstCoordinator().start()
     }
     
     func showThirdView() -> some View {
-        ThirdCoordinator(navigationPath: navigationPath).start()
+        ThirdDI(navigationPath: navigationPath).makeThirdCoordinator().start()
     }
     
     func showFourthView() -> some View {
-        FourthCoordinator(navigationPath: navigationPath).start()
+        FourthDI(navigationPath: navigationPath).makeFourthCoordinator().start()
     }
 }

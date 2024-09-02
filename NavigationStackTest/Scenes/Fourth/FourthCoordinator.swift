@@ -18,10 +18,8 @@ final class FourthCoordinator: FourthCoordinatorProtocol {
         self.navigationPath = navigationPath
     }
     
-    @ViewBuilder
-    func start() -> FourthView {
-        let viewModel = FourthViewModel(coordinator: self)
-        FourthView(viewModel: viewModel)
+    func start() -> some View {
+        FourthDI(navigationPath: navigationPath).makeFourthView()
     }
     
     func goBackTo(screen: String) {

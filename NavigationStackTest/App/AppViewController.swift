@@ -12,7 +12,7 @@ struct AppViewController: View {
     var body: some View {
         NavigationStack(path: $navigationPath) {
             let firstDI = FirstDI(navigationPath: $navigationPath)
-            (firstDI.makeFirstCoordinator() as! FirstCoordinator).start()
+            firstDI.makeFirstCoordinator().start()
         }
     }
 }

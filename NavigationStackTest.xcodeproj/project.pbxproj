@@ -33,6 +33,12 @@
 		9AF1A90C2C82327200A4A69F /* FirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A90B2C82327200A4A69F /* FirstCoordinator.swift */; };
 		9AF1A90E2C824A6800A4A69F /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A90D2C824A6800A4A69F /* SecondCoordinator.swift */; };
 		9AF1A9102C82551800A4A69F /* ThirdCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A90F2C82551800A4A69F /* ThirdCoordinator.swift */; };
+		9AF1A9132C85F12200A4A69F /* SecondFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A9122C85F12200A4A69F /* SecondFactory.swift */; };
+		9AF1A9152C85F12E00A4A69F /* SecondDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A9142C85F12E00A4A69F /* SecondDI.swift */; };
+		9AF1A9172C85FB8F00A4A69F /* ThirdFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A9162C85FB8F00A4A69F /* ThirdFactory.swift */; };
+		9AF1A9192C85FB9B00A4A69F /* ThirdDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A9182C85FB9B00A4A69F /* ThirdDI.swift */; };
+		9AF1A91B2C86003D00A4A69F /* FourthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A91A2C86003D00A4A69F /* FourthFactory.swift */; };
+		9AF1A91D2C86004D00A4A69F /* FourthDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A91C2C86004D00A4A69F /* FourthDI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +69,12 @@
 		9AF1A90B2C82327200A4A69F /* FirstCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCoordinator.swift; sourceTree = "<group>"; };
 		9AF1A90D2C824A6800A4A69F /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
 		9AF1A90F2C82551800A4A69F /* ThirdCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCoordinator.swift; sourceTree = "<group>"; };
+		9AF1A9122C85F12200A4A69F /* SecondFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondFactory.swift; sourceTree = "<group>"; };
+		9AF1A9142C85F12E00A4A69F /* SecondDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondDI.swift; sourceTree = "<group>"; };
+		9AF1A9162C85FB8F00A4A69F /* ThirdFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdFactory.swift; sourceTree = "<group>"; };
+		9AF1A9182C85FB9B00A4A69F /* ThirdDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdDI.swift; sourceTree = "<group>"; };
+		9AF1A91A2C86003D00A4A69F /* FourthFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthFactory.swift; sourceTree = "<group>"; };
+		9AF1A91C2C86004D00A4A69F /* FourthDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthDI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,13 +107,10 @@
 		9A0D114A2C7F93460094F48F /* NavigationStackTest */ = {
 			isa = PBXGroup;
 			children = (
-				9A0E01362C84333D00E76C78 /* Extensions */,
 				9A0E01352C84331300E76C78 /* App */,
+				9A0E01362C84333D00E76C78 /* Extensions */,
 				9AF1A9082C820DBA00A4A69F /* Protocols */,
-				9AF1A8FF2C8209D400A4A69F /* Fourth */,
-				9AF1A8FE2C8209CD00A4A69F /* Third */,
-				9AF1A8FD2C82096B00A4A69F /* Second */,
-				9AF1A8FC2C82096500A4A69F /* First */,
+				9AF1A9112C85F08200A4A69F /* Scenes */,
 				9A0D114B2C7F93460094F48F /* NavigationStackTestApp.swift */,
 				9A0D114D2C7F93460094F48F /* ContentView.swift */,
 				9A0D114F2C7F93480094F48F /* Assets.xcassets */,
@@ -155,6 +164,8 @@
 				9AF1A9022C820C2200A4A69F /* SecondPath.swift */,
 				9AF1A90D2C824A6800A4A69F /* SecondCoordinator.swift */,
 				9A0E012D2C841CED00E76C78 /* SecondViewModel.swift */,
+				9AF1A9122C85F12200A4A69F /* SecondFactory.swift */,
+				9AF1A9142C85F12E00A4A69F /* SecondDI.swift */,
 			);
 			path = Second;
 			sourceTree = "<group>";
@@ -166,6 +177,8 @@
 				9AF1A9042C820C9700A4A69F /* ThirdPath.swift */,
 				9AF1A90F2C82551800A4A69F /* ThirdCoordinator.swift */,
 				9A0E012F2C8420B900E76C78 /* ThirdViewModel.swift */,
+				9AF1A9162C85FB8F00A4A69F /* ThirdFactory.swift */,
+				9AF1A9182C85FB9B00A4A69F /* ThirdDI.swift */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -176,6 +189,8 @@
 				9A0E01272C815B5400E76C78 /* FourthView.swift */,
 				9A0E01312C84233700E76C78 /* FourthCoordinator.swift */,
 				9A0E01332C84241B00E76C78 /* FourthViewModel.swift */,
+				9AF1A91A2C86003D00A4A69F /* FourthFactory.swift */,
+				9AF1A91C2C86004D00A4A69F /* FourthDI.swift */,
 			);
 			path = Fourth;
 			sourceTree = "<group>";
@@ -187,6 +202,17 @@
 				9A0E01232C8153AC00E76C78 /* NavigationPathProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9AF1A9112C85F08200A4A69F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9AF1A8FF2C8209D400A4A69F /* Fourth */,
+				9AF1A8FE2C8209CD00A4A69F /* Third */,
+				9AF1A8FD2C82096B00A4A69F /* Second */,
+				9AF1A8FC2C82096500A4A69F /* First */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF1A9192C85FB9B00A4A69F /* ThirdDI.swift in Sources */,
 				9AF1A9102C82551800A4A69F /* ThirdCoordinator.swift in Sources */,
 				9AF1A9032C820C2300A4A69F /* SecondPath.swift in Sources */,
 				9A0E01242C8153AC00E76C78 /* NavigationPathProtocol.swift in Sources */,
@@ -270,16 +297,21 @@
 				9A0D115C2C7F99A00094F48F /* SecondView.swift in Sources */,
 				9A0E012C2C83F73400E76C78 /* FirstViewModel.swift in Sources */,
 				9A0D115E2C7F9B1D0094F48F /* ThirdView.swift in Sources */,
+				9AF1A9132C85F12200A4A69F /* SecondFactory.swift in Sources */,
 				9AF1A90C2C82327200A4A69F /* FirstCoordinator.swift in Sources */,
 				9AF1A90E2C824A6800A4A69F /* SecondCoordinator.swift in Sources */,
+				9AF1A9152C85F12E00A4A69F /* SecondDI.swift in Sources */,
 				9A0E01322C84233700E76C78 /* FourthCoordinator.swift in Sources */,
 				9A0E01342C84241B00E76C78 /* FourthViewModel.swift in Sources */,
+				9AF1A91D2C86004D00A4A69F /* FourthDI.swift in Sources */,
+				9AF1A9172C85FB8F00A4A69F /* ThirdFactory.swift in Sources */,
 				9A0E013A2C8541C800E76C78 /* FirstFactory.swift in Sources */,
 				9A0E012A2C83F42A00E76C78 /* AppViewController.swift in Sources */,
 				9A0E013C2C85527B00E76C78 /* FirstDI.swift in Sources */,
 				9A0D114C2C7F93460094F48F /* NavigationStackTestApp.swift in Sources */,
 				9A0E01282C815B5400E76C78 /* FourthView.swift in Sources */,
 				9A0E01262C81544200E76C78 /* NavigationPath+Extension.swift in Sources */,
+				9AF1A91B2C86003D00A4A69F /* FourthFactory.swift in Sources */,
 				9A0D115A2C7F93D10094F48F /* FirstView.swift in Sources */,
 				9AF1A9052C820C9700A4A69F /* ThirdPath.swift in Sources */,
 				9AF1A8FB2C82095200A4A69F /* Coordinator.swift in Sources */,

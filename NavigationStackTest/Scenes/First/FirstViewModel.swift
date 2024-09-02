@@ -17,21 +17,21 @@ protocol FirstViewModelProtocol: ObservableObject {
 }
 
 class FirstViewModel: FirstViewModelProtocol {
-    let coordinator: FirstCoordinator
+    let coordinator: any FirstCoordinatorProtocol
     
-    init(coordinator: FirstCoordinator) {
+    init(coordinator: any FirstCoordinatorProtocol) {
         self.coordinator = coordinator
     }
     
     func goToSecondView() -> some View {
-        coordinator.showSecondView()
+        AnyView(coordinator.showSecondView())
     }
     
     func goToThirdView() -> some View {
-        coordinator.showThirdView()
+        AnyView(coordinator.showThirdView())
     }
     
     func goToFourthView() -> some View {
-        coordinator.showFourthView()
+        AnyView(coordinator.showFourthView())
     }
 }

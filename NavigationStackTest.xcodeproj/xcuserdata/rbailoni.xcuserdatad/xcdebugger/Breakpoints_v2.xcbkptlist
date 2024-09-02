@@ -212,5 +212,197 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B16786EA-F513-486D-B9C1-77942564559D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NavigationStackTest/Scenes/Second/SecondCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "showFirstView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B16786EA-F513-486D-B9C1-77942564559D - 7c47c09e23b99e46"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NavigationStackTest.SecondCoordinator.start() -&gt; NavigationStackTest.SecondView&lt;NavigationStackTest.SecondViewModel&gt;"
+                  moduleName = "NavigationStackTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rbailoni/Developer/NavigationStackTest/NavigationStackTest/Scenes/Second/SecondCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  uuid = "B16786EA-F513-486D-B9C1-77942564559D - c3f830986144eed9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NavigationStackTest.SecondCoordinator.showFirstView() -&gt; some"
+                  moduleName = "NavigationStackTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rbailoni/Developer/NavigationStackTest/NavigationStackTest/Scenes/Second/SecondCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "78F5EBCB-C41A-4B12-BF5F-A3A4A827368F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NavigationStackTest/Scenes/First/FirstViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "goToSecondView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "78F5EBCB-C41A-4B12-BF5F-A3A4A827368F - d2ed85c8346adade"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NavigationStackTest.FirstViewModel.goToSecondView() -&gt; some"
+                  moduleName = "NavigationStackTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rbailoni/Developer/NavigationStackTest/NavigationStackTest/Scenes/First/FirstViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "78F5EBCB-C41A-4B12-BF5F-A3A4A827368F - d2ed85c8346adade"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NavigationStackTest.FirstViewModel.goToSecondView() -&gt; some"
+                  moduleName = "NavigationStackTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rbailoni/Developer/NavigationStackTest/NavigationStackTest/Scenes/First/FirstViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B34BDE7A-9E5A-4B7E-AEB9-5075A4B7FF9F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NavigationStackTest/Scenes/First/FirstViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "goToThirdView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B34BDE7A-9E5A-4B7E-AEB9-5075A4B7FF9F - 12020cfde45885ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NavigationStackTest.FirstViewModel.goToThirdView() -&gt; some"
+                  moduleName = "NavigationStackTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rbailoni/Developer/NavigationStackTest/NavigationStackTest/Scenes/First/FirstViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "B34BDE7A-9E5A-4B7E-AEB9-5075A4B7FF9F - 12020cfde45885ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NavigationStackTest.FirstViewModel.goToThirdView() -&gt; some"
+                  moduleName = "NavigationStackTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rbailoni/Developer/NavigationStackTest/NavigationStackTest/Scenes/First/FirstViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E287264-7F44-4FD0-80FC-28484CA28FED"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NavigationStackTest/Scenes/First/FirstViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "goToFourthView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9E287264-7F44-4FD0-80FC-28484CA28FED - efdee74b654106ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NavigationStackTest.FirstViewModel.goToFourthView() -&gt; some"
+                  moduleName = "NavigationStackTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rbailoni/Developer/NavigationStackTest/NavigationStackTest/Scenes/First/FirstViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "9E287264-7F44-4FD0-80FC-28484CA28FED - efdee74b654106ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NavigationStackTest.FirstViewModel.goToFourthView() -&gt; some"
+                  moduleName = "NavigationStackTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rbailoni/Developer/NavigationStackTest/NavigationStackTest/Scenes/First/FirstViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -8,6 +8,7 @@
 import SwiftUI
 
 protocol FourthViewModelProtocol: ObservableObject {
+    var coordinator: FourthCoordinator { get }
     func goBackTo(screen: String)
 }
 

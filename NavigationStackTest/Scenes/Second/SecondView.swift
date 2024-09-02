@@ -6,9 +6,8 @@
 //
 
 import SwiftUI
-
-struct SecondView: View {
-    @ObservedObject var viewModel: SecondViewModel
+struct SecondView<Model>: View where Model: SecondViewModelProtocol {
+    @ObservedObject var viewModel: Model
     
     var body: some View {
         VStack(spacing: 24) {

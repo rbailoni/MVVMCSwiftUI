@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct ThirdView: View {
-    @ObservedObject var viewModel: ThirdViewModel
+struct ThirdView<Model>: View where Model: ThirdViewModelProtocol {
+    @ObservedObject var viewModel: Model
     
     var body: some View {
         VStack(spacing: 24) {
