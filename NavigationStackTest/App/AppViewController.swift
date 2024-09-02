@@ -11,7 +11,8 @@ struct AppViewController: View {
     @State var navigationPath: NavigationPath = .init()
     var body: some View {
         NavigationStack(path: $navigationPath) {
-            FirstCoordinator(navigationPath: $navigationPath).start()
+            let firstDI = FirstDI(navigationPath: $navigationPath)
+            (firstDI.makeFirstCoordinator() as! FirstCoordinator).start()
         }
     }
 }

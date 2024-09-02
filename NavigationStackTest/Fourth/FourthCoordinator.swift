@@ -7,7 +7,11 @@
 
 import SwiftUI
 
-final class FourthCoordinator: Coordinator {
+protocol FourthCoordinatorProtocol: Coordinator {
+    func goBackTo(screen: String)
+}
+
+final class FourthCoordinator: FourthCoordinatorProtocol {
     var navigationPath: Binding<NavigationPath>
     
     init(navigationPath: Binding<NavigationPath>) {
@@ -15,7 +19,7 @@ final class FourthCoordinator: Coordinator {
     }
     
     @ViewBuilder
-    func start() -> some View {
+    func start() -> FourthView {
         let viewModel = FourthViewModel(coordinator: self)
         FourthView(viewModel: viewModel)
     }

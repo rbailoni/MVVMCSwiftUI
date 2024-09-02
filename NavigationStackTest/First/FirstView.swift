@@ -7,10 +7,8 @@
 
 import SwiftUI
 
-
-
-struct FirstView: View {
-    @ObservedObject var viewModel: FirstViewModel
+struct FirstView<Model>: View where Model: FirstViewModelProtocol {
+    @ObservedObject var viewModel: Model
     
     var body: some View {
         VStack(spacing: 24) {
@@ -27,7 +25,16 @@ struct FirstView: View {
             }
         }
         .navigationDestination(for: FirstPath.self) { pathValue in
-            viewModel.goToNextView(path: pathValue)
+            switch pathValue {
+            case .second:
+                viewModel.goToSecondView()
+            case .third:
+                viewModel.goToThirdView()
+            case .fourth:
+                viewModel.goToFourthView()
+            default:
+                EmptyView()
+            }
         }
         .navigationTitle("First Screen")
     }

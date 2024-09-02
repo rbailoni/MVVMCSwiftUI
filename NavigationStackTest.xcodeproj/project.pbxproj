@@ -23,6 +23,8 @@
 		9A0E01302C8420B900E76C78 /* ThirdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E012F2C8420B900E76C78 /* ThirdViewModel.swift */; };
 		9A0E01322C84233700E76C78 /* FourthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E01312C84233700E76C78 /* FourthCoordinator.swift */; };
 		9A0E01342C84241B00E76C78 /* FourthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E01332C84241B00E76C78 /* FourthViewModel.swift */; };
+		9A0E013A2C8541C800E76C78 /* FirstFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E01392C8541C800E76C78 /* FirstFactory.swift */; };
+		9A0E013C2C85527B00E76C78 /* FirstDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E013B2C85527B00E76C78 /* FirstDI.swift */; };
 		9AF1A8FB2C82095200A4A69F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A8FA2C82095200A4A69F /* Coordinator.swift */; };
 		9AF1A9012C820A1400A4A69F /* FirstPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A9002C820A1400A4A69F /* FirstPath.swift */; };
 		9AF1A9032C820C2300A4A69F /* SecondPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF1A9022C820C2200A4A69F /* SecondPath.swift */; };
@@ -51,6 +53,8 @@
 		9A0E012F2C8420B900E76C78 /* ThirdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewModel.swift; sourceTree = "<group>"; };
 		9A0E01312C84233700E76C78 /* FourthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthCoordinator.swift; sourceTree = "<group>"; };
 		9A0E01332C84241B00E76C78 /* FourthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewModel.swift; sourceTree = "<group>"; };
+		9A0E01392C8541C800E76C78 /* FirstFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstFactory.swift; sourceTree = "<group>"; };
+		9A0E013B2C85527B00E76C78 /* FirstDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDI.swift; sourceTree = "<group>"; };
 		9AF1A8FA2C82095200A4A69F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		9AF1A9002C820A1400A4A69F /* FirstPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPath.swift; sourceTree = "<group>"; };
 		9AF1A9022C820C2200A4A69F /* SecondPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPath.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 				9AF1A9002C820A1400A4A69F /* FirstPath.swift */,
 				9AF1A90B2C82327200A4A69F /* FirstCoordinator.swift */,
 				9A0E012B2C83F73400E76C78 /* FirstViewModel.swift */,
+				9A0E01392C8541C800E76C78 /* FirstFactory.swift */,
+				9A0E013B2C85527B00E76C78 /* FirstDI.swift */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -268,7 +274,9 @@
 				9AF1A90E2C824A6800A4A69F /* SecondCoordinator.swift in Sources */,
 				9A0E01322C84233700E76C78 /* FourthCoordinator.swift in Sources */,
 				9A0E01342C84241B00E76C78 /* FourthViewModel.swift in Sources */,
+				9A0E013A2C8541C800E76C78 /* FirstFactory.swift in Sources */,
 				9A0E012A2C83F42A00E76C78 /* AppViewController.swift in Sources */,
+				9A0E013C2C85527B00E76C78 /* FirstDI.swift in Sources */,
 				9A0D114C2C7F93460094F48F /* NavigationStackTestApp.swift in Sources */,
 				9A0E01282C815B5400E76C78 /* FourthView.swift in Sources */,
 				9A0E01262C81544200E76C78 /* NavigationPath+Extension.swift in Sources */,

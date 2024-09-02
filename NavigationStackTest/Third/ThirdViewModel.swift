@@ -7,14 +7,31 @@
 
 import SwiftUI
 
-class ThirdViewModel: ObservableObject {
+protocol ThirdViewModelProtocol: ObservableObject {
+    associatedtype FirstType: View
+    associatedtype SecondType: View
+    associatedtype FourthType: View
+    func goToFirstView() -> FirstType
+    func goToSecondView() -> SecondType
+    func goToFourthView() -> FourthType
+}
+
+class ThirdViewModel: ThirdViewModelProtocol {
     let coordinator: ThirdCoordinator
     
     init(coordinator: ThirdCoordinator) {
         self.coordinator = coordinator
     }
     
-    func goToNextView(path: ThirdPath) -> some View {
-        coordinator.nextScreen(path: path)
+    func goToFirstView() -> some View {
+        coordinator.showFirstView()
+    }
+    
+    func goToSecondView() -> some View {
+        coordinator.showSecondView()
+    }
+    
+    func goToFourthView() -> some View {
+        coordinator.showFourthView()
     }
 }

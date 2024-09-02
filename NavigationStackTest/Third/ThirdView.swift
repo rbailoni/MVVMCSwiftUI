@@ -24,7 +24,16 @@ struct ThirdView: View {
                 Text("Go Fourth Screen")
             }
             .navigationDestination(for: ThirdPath.self) { pathValue in
-                viewModel.goToNextView(path: pathValue)
+                switch pathValue {
+                case .first:
+                    viewModel.goToFirstView()
+                case .second:
+                    viewModel.goToSecondView()
+                case .fourth:
+                    viewModel.goToFourthView()
+                default:
+                    EmptyView()
+                }
             }
             .navigationTitle("Third Screen")
         }

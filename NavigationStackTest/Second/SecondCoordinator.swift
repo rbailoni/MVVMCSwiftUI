@@ -7,7 +7,16 @@
 
 import SwiftUI
 
-final class SecondCoordinator: Coordinator {
+protocol SecondCoordinatorProtocol: Coordinator {
+    associatedtype FirstType: View
+    associatedtype ThirdType: View
+    associatedtype FourthType: View
+    func showFirstView() -> FirstType
+    func showThirdView() -> ThirdType
+    func showFourthView() -> FourthType
+}
+
+final class SecondCoordinator: SecondCoordinatorProtocol {
     var navigationPath: Binding<NavigationPath>
     
     init(navigationPath: Binding<NavigationPath>) {
@@ -20,17 +29,15 @@ final class SecondCoordinator: Coordinator {
         SecondView(viewModel: viewModel)
     }
     
-    @ViewBuilder
-    func nextScreen(path: SecondPath) -> some View {
-        switch path {
-        case .first:
-            FirstCoordinator(navigationPath: navigationPath).start()
-        case .third:
-            ThirdCoordinator(navigationPath: navigationPath).start()
-        case .fourth:
-            FourthCoordinator(navigationPath: navigationPath).start()
-        default:
-            EmptyView()
-        }
+    func showFirstView() -> some View {
+        FirstCoordinator(navigationPath: navigationPath).start()
+    }
+    
+    func showThirdView() -> some View {
+        ThirdCoordinator(navigationPath: navigationPath).start()
+    }
+    
+    func showFourthView() -> some View {
+        FourthCoordinator(navigationPath: navigationPath).start()
     }
 }

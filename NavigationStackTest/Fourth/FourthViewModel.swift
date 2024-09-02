@@ -7,7 +7,11 @@
 
 import SwiftUI
 
-class FourthViewModel: ObservableObject {
+protocol FourthViewModelProtocol: ObservableObject {
+    func goBackTo(screen: String)
+}
+
+class FourthViewModel: FourthViewModelProtocol {
     let coordinator: FourthCoordinator
     
     init(coordinator: FourthCoordinator) {

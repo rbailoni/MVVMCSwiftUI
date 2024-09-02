@@ -25,7 +25,16 @@ struct SecondView: View {
             }
         }
         .navigationDestination(for: SecondPath.self) { pathValue in
-            viewModel.goToNextView(path: pathValue)
+            switch pathValue {
+            case .first:
+                viewModel.goToFirstView()
+            case .third:
+                viewModel.goToThirdView()
+            case .fourth:
+                viewModel.goToFourthView()
+            default:
+                EmptyView()
+            }
         }
         .navigationTitle("Second Screen")
     }
