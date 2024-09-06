@@ -23,31 +23,26 @@ extension NavigationPath {
     }
     
     mutating func backTo(screen: String, onFailure: OnFailureDestination = .previous) {
-        guard let index = stackPaths().firstIndex(of: screen) else {
-            switch onFailure {
-            case .previous:
-                self.removeLast()
-            case .root:
-                self.removeLast(self.count)
-            }
-            return
-        }
-        self.removeLast(index + 1)
+        remove(index: stackPaths().firstIndex(of: screen), onFailure: onFailure)
     }
     
     mutating func backToFirst(screen: String, onFailure: OnFailureDestination = .previous) {
-        guard let index = stackPaths().lastIndex(of: screen) else {
+        remove(index: stackPaths().lastIndex(of: screen), onFailure: onFailure)
+    }
+    
+    
+    private mutating func remove(index: Int?, onFailure: OnFailureDestination) {
+        guard let index else {
             switch onFailure {
-            case .root:
-                self.removeLast()
             case .previous:
+                self.removeLast()
+            case .root:
                 self.removeLast(self.count)
             }
             return
         }
         self.removeLast(index + 1)
     }
-    
 }
 
 enum OnFailureDestination {
